@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add.view.AddActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_category"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_margin="@dimen/margin_medium"
+        android:background="@drawable/shape_field_bg"
+        android:hint="@string/category"
+        android:textSize="16sp"
+        android:gravity="center|start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_margin="@dimen/margin_medium"
+        android:background="@drawable/shape_field_bg"
+        android:hint="@string/location"
+        android:textSize="16sp"
+        android:gravity="center|start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/auto_category" />
+
+    <TextView
+        android:id="@+id/text_date_time"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_margin="@dimen/margin_medium"
+        android:background="@drawable/shape_field_bg"
+        android:text="@string/date_of_incident"
+        android:textSize="16sp"
+        android:gravity="center|start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_location" />
+
+    <EditText
+        android:id="@+id/text_details"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:textSize="16sp"
+        android:gravity="center|start"
+        android:layout_margin="@dimen/margin_medium"
+        android:background="@drawable/shape_field_bg"
+        android:hint="@string/details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_date_time" />
+
+    <CheckBox
+        android:id="@+id/check_reported"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:text="@string/reported_police"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_details" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:background="@drawable/shape_btn_send_bg"
+        android:text="@string/send"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/check_reported" />
+
+</android.support.constraint.ConstraintLayout>
